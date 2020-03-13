@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -168,6 +169,27 @@
         <object-type name="Efeitos" sid="236047185016264">
             <plugin id="TiledBg" />
             <texture />
+        </object-type>
+        <object-type name="Text" sid="795948144623884">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="769761645935959">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="BordasDestruiveis" sid="156858059266695">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="337507195946672">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812167512479937" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

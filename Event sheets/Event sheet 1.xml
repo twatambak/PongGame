@@ -4,7 +4,7 @@
     <name>Event sheet 1</name>
     <events>
         <variable constant="0" name="VelocidadeBola" sid="118298211820659" static="0" type="number">300</variable>
-        <variable constant="0" name="CorBackground" sid="307655474121503" static="0" type="text">NA</variable>
+        <variable constant="0" name="CorBackground" sid="307655474121503" static="0" type="text">a</variable>
         <event-group description="" sid="988925537261469" title="Backgrounds">
             <sub-events>
                 <event-block sid="364710460734474">
@@ -173,5 +173,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="186927646326713">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="115616189688410" type="Bola">
+                    <param id="0" name="Object">BordasDestruiveis</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="582663967565176" type="BordasDestruiveis" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
