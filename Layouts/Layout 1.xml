@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2layout>
+    <name>Layout 1</name>
+    <sid>8873350371196689</sid>
+    <event-sheet>Event sheet 1</event-sheet>
+    <size>
+        <width>704</width>
+        <height>704</height>
+    </size>
+    <margins>
+        <horizontal>704</horizontal>
+        <vertical>704</vertical>
+    </margins>
+    <unbounded-scrolling>0</unbounded-scrolling>
+    <layers>
+        <layer name="Background" sid="8722530541249526">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="BackgroundRoxo_1" uid="0">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>-64</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BackgroundAzul_1" uid="1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>-96</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BaseBackgroundTeste" uid="9">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Bulge">
+                            <parameters>
+                                <radius>0.7</radius>
+                                <scale>0.2</scale>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>704</width>
+                        <height>704</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects>
+                <effect-type name="Bulge">
+                    <effect id="bulge" />
+                    <effect-instance type="Bulge">
+                        <parameters>
+                            <radius>0.7</radius>
+                            <scale>0.2</scale>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="Noise">
+                    <effect id="noise" />
+                    <effect-instance type="Noise">
+                        <parameters>
+                            <color>0.3</color>
+                            <intensity>0.15</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
+        </layer>
+        <layer name="Bordas" sid="527048378499861">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="BordaBackground" uid="2">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>640</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BordaBackground" uid="3">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>640</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BordaBackground" uid="4">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>704</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BordaBackground" uid="5">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>704</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects>
+                <effect-type name="Bulge">
+                    <effect id="bulge" />
+                    <effect-instance type="Bulge">
+                        <parameters>
+                            <radius>0.7</radius>
+                            <scale>0.2</scale>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="Noise">
+                    <effect id="noise" />
+                    <effect-instance type="Noise">
+                        <parameters>
+                            <color>0.3</color>
+                            <intensity>0.15</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
+        </layer>
+        <layer name="Jogador" sid="553041933235879">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Player2H" uid="11">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>600</max-speed>
+                                <acceleration>10000</acceleration>
+                                <deceleration>10000</deceleration>
+                                <directions>4 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>576</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Player2V" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>600</max-speed>
+                                <acceleration>10000</acceleration>
+                                <deceleration>10000</deceleration>
+                                <directions>4 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>128</x>
+                        <y>352</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Player1H" uid="7">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>600</max-speed>
+                                <acceleration>10000</acceleration>
+                                <deceleration>10000</deceleration>
+                                <directions>4 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>128</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Player1V" uid="6">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>600</max-speed>
+                                <acceleration>10000</acceleration>
+                                <deceleration>10000</deceleration>
+                                <directions>4 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>576</x>
+                        <y>352</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects>
+                <effect-type name="Bulge">
+                    <effect id="bulge" />
+                    <effect-instance type="Bulge">
+                        <parameters>
+                            <radius>0.7</radius>
+                            <scale>0.2</scale>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                    <effect-instance type="GlowVertical">
+                        <parameters>
+                            <intensity>0.6</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="GlowHorizontal">
+                    <effect id="glowhorizontal" />
+                    <effect-instance type="GlowHorizontal">
+                        <parameters>
+                            <intensity>0.6</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="Noise">
+                    <effect id="noise" />
+                    <effect-instance type="Noise">
+                        <parameters>
+                            <color>0.3</color>
+                            <intensity>0.15</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
+        </layer>
+        <layer name="Bola" sid="447871106259938">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Bola" uid="10">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>300</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>80</gravity>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="GlowHorizontal">
+                            <parameters>
+                                <intensity>1</intensity>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="GlowVertical">
+                            <parameters>
+                                <intensity>1</intensity>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>352</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects>
+                <effect-type name="Bulge">
+                    <effect id="bulge" />
+                    <effect-instance type="Bulge">
+                        <parameters>
+                            <radius>0.7</radius>
+                            <scale>0.2</scale>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="Noise">
+                    <effect id="noise" />
+                    <effect-instance type="Noise">
+                        <parameters>
+                            <color>0.3</color>
+                            <intensity>0.15</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
+        </layer>
+    </layers>
+    <nonworld-instances />
+    <effects />
+</c2layout>

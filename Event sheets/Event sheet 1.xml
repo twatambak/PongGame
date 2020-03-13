@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="VelocidadeBola" sid="118298211820659" static="0" type="number">300</variable>
+        <variable constant="0" name="CorBackground" sid="307655474121503" static="0" type="text">NA</variable>
+        <event-group description="" sid="988925537261469" title="Backgrounds">
+            <sub-events>
+                <event-block sid="364710460734474">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="172510487537676" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="921066661978044">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="530751000001415" type="System">
+                                    <param id="0" name="Variable">CorBackground</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Roxo_1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="687394114712124" type="System">
+                                    <param id="0" name="Object to create">BackgroundRoxo_1</param>
+                                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                                    <param id="2" name="X">32</param>
+                                    <param id="3" name="Y">32</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="612689403576016" type="BackgroundRoxo_1">
+                                    <param id="0" name="Width">640</param>
+                                    <param id="1" name="Height">640</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="957109079742781">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="559395126455278" type="System">
+                                    <param id="0" name="Variable">CorBackground</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Azul_1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="568838633022504" type="System">
+                                    <param id="0" name="Object to create">BackgroundAzul_1</param>
+                                    <param id="1" name="Layer">&quot;Background&quot;</param>
+                                    <param id="2" name="X">32</param>
+                                    <param id="3" name="Y">32</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="318504990607238" type="BackgroundAzul_1">
+                                    <param id="0" name="Width">640</param>
+                                    <param id="1" name="Height">640</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="768826029766591" title="ControlesP1">
+            <sub-events>
+                <event-block sid="431356130933709">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="577984854260192" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="150192048747652" type="Player1V">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="563202664118349" type="Player1H">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="460201452238860">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="383175465443603" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="522962801992241" type="Player1V">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="557173287512207" type="Player1H">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="681814370894208" title="ControlesP2">
+            <sub-events>
+                <event-block sid="884105487846194">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="310501938522660" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="197076443551580" type="Player2V">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="375819952507650" type="Player2H">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="961864340352710">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="791081309761968" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="168817536994752" type="Player2V">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="268037537339750" type="Player2H">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="441883129221862" title="Bola">
+            <sub-events>
+                <event-block sid="632073682601745">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="556094587940920" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="638728232415179" type="Bola">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="712112014243464" type="Bola">
+                            <param id="0" name="Angle">random(0, 360)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="426490812866091" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="310334027670230" type="Bola">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="111895913484654">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="274236582969681" type="System">
+                            <param id="0" name="Interval (seconds)">0.2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="154722302103342" type="System">
+                            <param id="0" name="Variable">VelocidadeBola</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="659742806300338">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="832170932297745" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="961288242805014" type="Bola">
+                            <param id="0" name="Speed">VelocidadeBola</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
