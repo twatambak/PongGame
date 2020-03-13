@@ -12,7 +12,6 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -25,6 +24,7 @@
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
         <effect author="Scirra" id="noise">Noise</effect>
+        <effect author="Scirra" id="setcolor">Set color</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -127,6 +127,9 @@
                 <effect-type name="GlowVertical">
                     <effect id="glowvertical" />
                 </effect-type>
+                <effect-type name="SetColor">
+                    <effect id="setcolor" />
+                </effect-type>
             </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104652701835450" speed="5">
@@ -169,14 +172,6 @@
         <object-type name="Efeitos" sid="236047185016264">
             <plugin id="TiledBg" />
             <texture />
-        </object-type>
-        <object-type name="Text" sid="795948144623884">
-            <plugin id="Text" />
-            <behaviors>
-                <behavior-type name="8Direction" sid="769761645935959">
-                    <behavior id="EightDir" />
-                </behavior-type>
-            </behaviors>
         </object-type>
         <object-type name="BordasDestruiveis" sid="156858059266695">
             <plugin id="Sprite" />

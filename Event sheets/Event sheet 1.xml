@@ -129,59 +129,121 @@
         </event-group>
         <event-group description="" sid="441883129221862" title="Bola">
             <sub-events>
-                <event-block sid="632073682601745">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="556094587940920" type="System" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="638728232415179" type="Bola">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="712112014243464" type="Bola">
-                            <param id="0" name="Angle">random(0, 360)</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="426490812866091" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="310334027670230" type="Bola">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="111895913484654">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="274236582969681" type="System">
-                            <param id="0" name="Interval (seconds)">0.2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="154722302103342" type="System">
-                            <param id="0" name="Variable">VelocidadeBola</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="659742806300338">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="832170932297745" type="System" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Bullet" id="0" name="Set speed" sid="961288242805014" type="Bola">
-                            <param id="0" name="Speed">VelocidadeBola</param>
-                        </action>
-                    </actions>
-                </event-block>
+                <event-group description="" sid="122542666313984" title="Comportamento da bola">
+                    <sub-events>
+                        <event-block sid="186927646326713">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="115616189688410" type="Bola">
+                                    <param id="0" name="Object">BordasDestruiveis</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="582663967565176" type="BordasDestruiveis" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="632073682601745">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="556094587940920" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="638728232415179" type="Bola">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="712112014243464" type="Bola">
+                                    <param id="0" name="Angle">random(0, 360)</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="426490812866091" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="310334027670230" type="Bola">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="111895913484654">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="274236582969681" type="System">
+                                    <param id="0" name="Interval (seconds)">0.2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="154722302103342" type="System">
+                                    <param id="0" name="Variable">VelocidadeBola</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="659742806300338">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="832170932297745" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="961288242805014" type="Bola">
+                                    <param id="0" name="Speed">VelocidadeBola</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="986765512657979" title="Alteração da cor da bola">
+                    <sub-events>
+                        <event-block any="1" sid="287858382760268">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="499063385249670" type="Bola">
+                                    <param id="0" name="Object">Player1H</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="628595567768209" type="Bola">
+                                    <param id="0" name="Object">Player1V</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-28" name="Set effect parameter" sid="723078827030307" type="Bola">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">50</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="344675268742722" type="Bola">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="455206346819025" type="Bola">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="473710194204455">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="548220644927964" type="Bola">
+                                    <param id="0" name="Object">Player2H</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="273984347591977" type="Bola">
+                                    <param id="0" name="Object">Player2V</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-28" name="Set effect parameter" sid="687042648366415" type="Bola">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">90</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="536925340785218" type="Bola">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="193222767489835" type="Bola">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="186927646326713">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="115616189688410" type="Bola">
-                    <param id="0" name="Object">BordasDestruiveis</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="582663967565176" type="BordasDestruiveis" />
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
