@@ -835,9 +835,9 @@
             <instances>
                 <instance type="Texto2" uid="667">
                     <properties>
-                        <text>HitKill Studios</text>
+                        <text>Developed by HitKill Studios</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-21.6,400,0</font>
+                        <font>Arial,-26.4,400,0</font>
                         <color>252,171,2</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -846,7 +846,7 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
-                        <ID>1P</ID>
+                        <ID>NA</ID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -854,7 +854,37 @@
                         <x>352</x>
                         <y>592</y>
                         <z>0</z>
-                        <width>184</width>
+                        <width>392</width>
+                        <height>48</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Texto2" uid="666">
+                    <properties>
+                        <text>Press SPACE to select</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-18.4,400,0</font>
+                        <color>152,252,2</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <ID>NA</ID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>544</y>
+                        <z>0</z>
+                        <width>280</width>
                         <height>48</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>

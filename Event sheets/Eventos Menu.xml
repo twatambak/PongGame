@@ -50,10 +50,218 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">&quot;1P&quot;</param>
                         </condition>
+                        <condition id="-7" name="Compare instance variable" sid="625173685729535" type="BordasOpcoes">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;1P&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set font color" sid="699329260160632" type="Texto2">
                             <param id="0" name="Color">rgb(255, 20, 161)</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="556611022262281" type="BordasOpcoes">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="989096049939204">
+            <conditions>
+                <condition id="-22" name="Else" sid="102361534790007" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="145021083000863">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="972164935371281" type="Texto2">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;1P&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="796122339689428" type="BordasOpcoes">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;1P&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set font color" sid="846340909205075" type="Texto2">
+                            <param id="0" name="Color">rgb(152, 252, 2)</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="301571916033791" type="BordasOpcoes">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="212193550827253">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="155048328525789" type="System">
+                    <param id="0" name="Variable">Opcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="380207472494985">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="531653906001990" type="Texto2">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;2P&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="427625026839787" type="BordasOpcoes">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;2P&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set font color" sid="634167223063406" type="Texto2">
+                            <param id="0" name="Color">rgb(255, 20, 161)</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="140932878600095" type="BordasOpcoes">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="261872722270871">
+            <conditions>
+                <condition id="-22" name="Else" sid="331986075150958" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="297181326669239">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="270795364112814" type="Texto2">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;2P&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="836436880610123" type="BordasOpcoes">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;2P&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set font color" sid="554074712919107" type="Texto2">
+                            <param id="0" name="Color">rgb(152, 252, 2)</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="589291110455933" type="BordasOpcoes">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="598623078740781">
+            <conditions>
+                <condition id="2" name="Key is down" sid="935438179980549" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="310850756359972">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="321307352705866" type="System">
+                            <param id="0" name="Variable">Opcao</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="438132291209821" type="System">
+                            <param id="0" name="Variable">Opcao</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="633456059535347" type="System">
+                            <param id="0" name="Variable">Opcao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="473667109214500">
+            <conditions>
+                <condition id="2" name="Key is down" sid="604267034814324" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="257312859927950">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="700859055068517" type="System">
+                            <param id="0" name="Variable">Opcao</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="905952471065329" type="System">
+                            <param id="0" name="Variable">Opcao</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="386152804394992" type="System">
+                            <param id="0" name="Variable">Opcao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="496237743547276">
+            <conditions>
+                <condition id="2" name="Key is down" sid="638717878048403" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="244604547581760">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="713128512282290" type="System">
+                            <param id="0" name="Variable">Opcao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="492984434643136" type="System">
+                            <param id="0" name="Layout">Pong</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="906251838135233" type="System">
+                            <param id="0" name="Variable">Modo</param>
+                            <param id="1" name="Value">&quot;Bot&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="128364281976537">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="428912208183325" type="System">
+                            <param id="0" name="Variable">Opcao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="856086964122119" type="System">
+                            <param id="0" name="Layout">Pong</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="341989073718704" type="System">
+                            <param id="0" name="Variable">Modo</param>
+                            <param id="1" name="Value">&quot;Coop&quot;</param>
                         </action>
                     </actions>
                 </event-block>

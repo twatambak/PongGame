@@ -237,6 +237,12 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Texto3" sid="533831113084611">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="ID" sid="303473217637770" type="string" />
+            </instance-variables>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
