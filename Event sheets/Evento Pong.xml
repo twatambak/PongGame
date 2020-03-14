@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>Evento Pong</name>
     <events>
         <variable constant="0" name="Modo" sid="131011317398115" static="0" type="text">Coop</variable>
         <variable constant="0" name="VelocidadeBola" sid="118298211820659" static="0" type="number">300</variable>

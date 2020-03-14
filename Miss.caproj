@@ -12,11 +12,13 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
@@ -88,6 +90,9 @@
                 <behavior-type name="Solid" sid="422710151283278">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="642858028318751">
+                    <behavior id="bound" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="254003264820521" speed="5">
@@ -103,6 +108,9 @@
                 </behavior-type>
                 <behavior-type name="Solid" sid="136005830222884">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="107587472748681">
+                    <behavior id="bound" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -147,6 +155,9 @@
                 <behavior-type name="Solid" sid="810773085670604">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="864910686015298">
+                    <behavior id="bound" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="291308493463941" speed="5">
@@ -162,6 +173,9 @@
                 </behavior-type>
                 <behavior-type name="Solid" sid="735382006773843">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="101412162325631">
+                    <behavior id="bound" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -187,13 +201,18 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Texto1" sid="795175338110161">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Pong.xml</layout>
+        <layout>Menu.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Evento Pong.xml</event-sheet>
+        <event-sheet>Eventos Menu.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="8" />
@@ -209,5 +228,8 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="hacked.css" />
+        <file name="hacked_crt-webfont.woff" />
+        <file name="hacked_crt-webfont.woff2" />
     </files-folder>
 </c2project>
