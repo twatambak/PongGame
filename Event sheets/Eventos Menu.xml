@@ -12,6 +12,10 @@
                     <param id="0" name="Family name">&quot;hacked_crtregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;hacked.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="633556433149804" type="Texto2">
+                    <param id="0" name="Family name">&quot;liquid_crystalregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;liquid.css&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>

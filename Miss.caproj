@@ -204,6 +204,9 @@
         <object-type name="Texto1" sid="795175338110161">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Texto2" sid="877864280716914">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -231,5 +234,8 @@
         <file name="hacked.css" />
         <file name="hacked_crt-webfont.woff" />
         <file name="hacked_crt-webfont.woff2" />
+        <file name="liquid.css" />
+        <file name="liquidcrystal-normal-webfont.woff" />
+        <file name="liquidcrystal-normal-webfont.woff2" />
     </files-folder>
 </c2project>
