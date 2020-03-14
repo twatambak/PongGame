@@ -18,6 +18,8 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -203,9 +205,37 @@
         </object-type>
         <object-type name="Texto1" sid="795175338110161">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Flash" sid="724183236721678">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="951705825093383">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="Texto2" sid="877864280716914">
             <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="ID" sid="437746775106300" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="BordasOpcoes" sid="715130937568540">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="237416760867126" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="579369250918029">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="196130806195997" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
