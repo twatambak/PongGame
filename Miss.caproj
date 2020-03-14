@@ -243,6 +243,16 @@
                 <instance-variable name="ID" sid="303473217637770" type="string" />
             </instance-variables>
         </object-type>
+        <object-type name="GatilhoVitoria" sid="708979704899989">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable name="Cor" sid="370168628701347" type="string" />
+            </instance-variables>
+            <texture />
+        </object-type>
+        <object-type name="Texto4" sid="486334500698024">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

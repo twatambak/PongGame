@@ -17,6 +17,10 @@
                     <param id="0" name="Family name">&quot;liquid_crystalregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;liquid.css&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="577418535099770" type="System">
+                    <param id="0" name="Variable">Opcao</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="708943022948581">
@@ -163,7 +167,7 @@
         </event-block>
         <event-block sid="598623078740781">
             <conditions>
-                <condition id="2" name="Key is down" sid="935438179980549" type="Keyboard">
+                <condition id="0" name="On key pressed" sid="935438179980549" type="Keyboard">
                     <param id="0" name="Key">39</param>
                 </condition>
             </conditions>
@@ -193,7 +197,7 @@
         </event-block>
         <event-block sid="473667109214500">
             <conditions>
-                <condition id="2" name="Key is down" sid="604267034814324" type="Keyboard">
+                <condition id="0" name="On key pressed" sid="604267034814324" type="Keyboard">
                     <param id="0" name="Key">37</param>
                 </condition>
             </conditions>
@@ -223,7 +227,7 @@
         </event-block>
         <event-block sid="496237743547276">
             <conditions>
-                <condition id="2" name="Key is down" sid="638717878048403" type="Keyboard">
+                <condition id="0" name="On key pressed" sid="638717878048403" type="Keyboard">
                     <param id="0" name="Key">32</param>
                 </condition>
             </conditions>

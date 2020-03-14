@@ -299,9 +299,9 @@
             <instances>
                 <instance type="Texto1" uid="1292">
                     <properties>
-                        <text>Ms. Taken</text>
+                        <text>Ms. Take</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-85.6,400,0</font>
+                        <font>Arial,-93.6,400,0</font>
                         <color>152,252,2</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>

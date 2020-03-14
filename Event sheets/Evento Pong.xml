@@ -3,9 +3,28 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Evento Pong</name>
     <events>
-        <variable constant="0" name="Modo" sid="131011317398115" static="0" type="text">Coop</variable>
+        <variable constant="0" name="TextoVitoria" sid="994466554909431" static="0" type="text"></variable>
+        <variable constant="0" name="Modo" sid="131011317398115" static="0" type="text">Bot</variable>
         <variable constant="0" name="VelocidadeBola" sid="118298211820659" static="0" type="number">300</variable>
         <variable constant="0" name="CorBackground" sid="307655474121503" static="0" type="text">a</variable>
+        <event-block sid="924722026109491">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="730886189225218" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="608214650330879" type="System">
+                    <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="411707001088170" type="System">
+                    <param id="0" name="Variable">VelocidadeBola</param>
+                    <param id="1" name="Value">300</param>
+                </action>
+                <action id="0" name="Set text" sid="510462086921427" type="Texto4">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="957525233146650" title="Início">
             <sub-events>
                 <event-block sid="244942780757741">
@@ -152,7 +171,7 @@
                             <actions>
                                 <action id="-10" name="Add to" sid="154722302103342" type="System">
                                     <param id="0" name="Variable">VelocidadeBola</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="1" name="Value">2</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -395,11 +414,89 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="473979453967594">
+        <event-block sid="133239876540034">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="878201413135095" type="System" />
+                <condition id="0" name="On collision with another object" sid="488186629444119" type="Bola">
+                    <param id="0" name="Object">GatilhoVitoria</param>
+                </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="5" name="Set web font" sid="388253518764701" type="Texto4">
+                    <param id="0" name="Family name">&quot;liquid_crystalregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;liquid.css&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="181702563367240" type="Player1H" />
+                <action id="-9" name="Destroy" sid="602511271423466" type="Player1V" />
+                <action id="-9" name="Destroy" sid="709910890334280" type="Player2H" />
+                <action id="-9" name="Destroy" sid="712078152001692" type="Player2V" />
+            </actions>
+            <sub-events>
+                <event-block sid="766496863679045">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="753030149162266" type="GatilhoVitoria">
+                            <param id="0" name="Instance variable">Cor</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Verde&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="928921752792442" type="System">
+                            <param id="0" name="Variable">TextoVitoria</param>
+                            <param id="1" name="Value">&quot;The winner is... PINK!&quot; </param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="461278245049788" type="System">
+                            <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="827737638515406" type="Texto4">
+                            <param id="0" name="Color">rgb(255, 20, 161)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="530188001644372" type="Texto4">
+                            <param id="0" name="Text">TextoVitoria</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="897393551422233">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="289660431741963" type="GatilhoVitoria">
+                            <param id="0" name="Instance variable">Cor</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Rosa&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="350462816417628" type="System">
+                            <param id="0" name="Variable">TextoVitoria</param>
+                            <param id="1" name="Value">&quot;The winner is... GREEN!&quot; </param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="600812328771932" type="System">
+                            <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="983716958757779" type="Texto4">
+                            <param id="0" name="Color">rgb(152, 252, 2)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="185718072015953" type="Texto4">
+                            <param id="0" name="Text">TextoVitoria</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="345054549641378">
+            <conditions>
+                <condition id="2" name="Key is down" sid="860345188345631" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="216173937945910" type="System">
+                    <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="558895386057225" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
