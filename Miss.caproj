@@ -24,6 +24,7 @@
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
         <effect author="Scirra" id="noise">Noise</effect>
+        <effect author="Scirra" id="scanlines">Scan lines</effect>
         <effect author="Scirra" id="setcolor">Set color</effect>
     </used-effects>
     <configurations>

@@ -117,6 +117,14 @@
                         </parameters>
                     </effect-instance>
                 </effect-type>
+                <effect-type name="ScanLines">
+                    <effect id="scanlines" />
+                    <effect-instance type="ScanLines">
+                        <parameters>
+                            <line-height>3</line-height>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
             </effects>
         </layer>
         <layer name="Bordas" sid="527048378499861">
@@ -18715,6 +18723,14 @@
                         </parameters>
                     </effect-instance>
                 </effect-type>
+                <effect-type name="ScanLines">
+                    <effect id="scanlines" />
+                    <effect-instance type="ScanLines">
+                        <parameters>
+                            <line-height>3</line-height>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
             </effects>
         </layer>
         <layer name="Jogador" sid="553041933235879">
@@ -18929,6 +18945,14 @@
                         </parameters>
                     </effect-instance>
                 </effect-type>
+                <effect-type name="ScanLines">
+                    <effect id="scanlines" />
+                    <effect-instance type="ScanLines">
+                        <parameters>
+                            <line-height>3</line-height>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
             </effects>
         </layer>
         <layer name="Bola" sid="447871106259938">
@@ -19017,6 +19041,14 @@
                         <parameters>
                             <color>0.3</color>
                             <intensity>0.15</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="ScanLines">
+                    <effect id="scanlines" />
+                    <effect-instance type="ScanLines">
+                        <parameters>
+                            <line-height>3</line-height>
                         </parameters>
                     </effect-instance>
                 </effect-type>

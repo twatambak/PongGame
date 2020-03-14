@@ -3,8 +3,59 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Modo" sid="131011317398115" static="0" type="text">Coop</variable>
         <variable constant="0" name="VelocidadeBola" sid="118298211820659" static="0" type="number">300</variable>
         <variable constant="0" name="CorBackground" sid="307655474121503" static="0" type="text">a</variable>
+        <event-group description="" sid="957525233146650" title="Início">
+            <sub-events>
+                <event-block sid="244942780757741">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="702626662275585" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="953858406992609">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="182090343700619" type="System">
+                                    <param id="0" name="Variable">Modo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Bot&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="904830377503454" type="System">
+                                    <param id="0" name="Group name">&quot;Bot&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="953335891654872" type="System">
+                                    <param id="0" name="Group name">&quot;ControlesP2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="691734160160508">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="215202289460012" type="System">
+                                    <param id="0" name="Variable">Modo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Coop&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="807507796362441" type="System">
+                                    <param id="0" name="Group name">&quot;Bot&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="587330022985058" type="System">
+                                    <param id="0" name="Group name">&quot;ControlesP2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="988925537261469" title="Backgrounds">
             <sub-events>
                 <event-block sid="364710460734474">
@@ -56,74 +107,6 @@
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="768826029766591" title="ControlesP1">
-            <sub-events>
-                <event-block sid="431356130933709">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="577984854260192" type="Keyboard">
-                            <param id="0" name="Key">38</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="150192048747652" type="Player1V">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="563202664118349" type="Player1H">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="460201452238860">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="383175465443603" type="Keyboard">
-                            <param id="0" name="Key">40</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="522962801992241" type="Player1V">
-                            <param id="0" name="Control">3</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="557173287512207" type="Player1H">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" disabled="1" sid="681814370894208" title="ControlesP2">
-            <sub-events>
-                <event-block sid="884105487846194">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="310501938522660" type="Keyboard">
-                            <param id="0" name="Key">87</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="197076443551580" type="Player2V">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="375819952507650" type="Player2H">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="961864340352710">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="791081309761968" type="Keyboard">
-                            <param id="0" name="Key">83</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="168817536994752" type="Player2V">
-                            <param id="0" name="Control">3</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="268037537339750" type="Player2H">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -245,93 +228,172 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="402812038449502" title="Bot" />
-        <event-block sid="154616936950726">
-            <conditions>
-                <condition id="-2" name="Compare Y" sid="625331445610655" type="Bola">
-                    <param id="0" name="Comparison">5</param>
-                    <param id="1" name="Y co-ordinate">496</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="549107545364319" type="Bola">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">600</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="402812038449502" title="Bot">
             <sub-events>
-                <event-block sid="186052313211031">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="647845576925397" type="Player2H">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="X co-ordinate">Bola.X</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="640525106989455" type="Player2V">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="867912342966768" type="Player2H">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="520054809201581">
-                    <conditions>
-                        <condition id="-1" name="Compare X" sid="594257136910777" type="Player2H">
-                            <param id="0" name="Comparison">5</param>
-                            <param id="1" name="X co-ordinate">Bola.X</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="899433220406104" type="Player2V">
-                            <param id="0" name="Control">3</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="532932923231297" type="Player2H">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
+                <event-group description="" sid="159783809688554" title="Comportamento do Bot">
+                    <sub-events>
+                        <event-block sid="154616936950726">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="625331445610655" type="Bola">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Y co-ordinate">496</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="549107545364319" type="Bola">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">600</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="186052313211031">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="647845576925397" type="Player2H">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">Bola.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="640525106989455" type="Player2V">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="867912342966768" type="Player2H">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="520054809201581">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="594257136910777" type="Player2H">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">Bola.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="899433220406104" type="Player2V">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="532932923231297" type="Player2H">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="390760078886306">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="895838819187856" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="897885330937776">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="608411188637440" type="Player2V">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Y co-ordinate">Bola.Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="548773138407844" type="Player2V">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="737645912800570" type="Player2H">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="339156482824585">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="142044282945385" type="Player2V">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Y co-ordinate">Bola.Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="992532622675770" type="Player2V">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="470057956551632" type="Player2H">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
-        </event-block>
-        <event-block sid="390760078886306">
-            <conditions>
-                <condition id="-22" name="Else" sid="895838819187856" type="System" />
-            </conditions>
-            <actions />
+        </event-group>
+        <event-group description="" sid="351595347564621" title="Controle Jogadores">
             <sub-events>
-                <event-block any="1" sid="897885330937776">
-                    <conditions>
-                        <condition id="-2" name="Compare Y" sid="608411188637440" type="Player2V">
-                            <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">Bola.Y</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="548773138407844" type="Player2V">
-                            <param id="0" name="Control">3</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="737645912800570" type="Player2H">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="339156482824585">
-                    <conditions>
-                        <condition id="-2" name="Compare Y" sid="142044282945385" type="Player2V">
-                            <param id="0" name="Comparison">5</param>
-                            <param id="1" name="Y co-ordinate">Bola.Y</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="992532622675770" type="Player2V">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="470057956551632" type="Player2H">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
+                <event-group description="" sid="768826029766591" title="ControlesP1">
+                    <sub-events>
+                        <event-block sid="431356130933709">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="577984854260192" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="150192048747652" type="Player1V">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="563202664118349" type="Player1H">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="460201452238860">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="383175465443603" type="Keyboard">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="522962801992241" type="Player1V">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="557173287512207" type="Player1H">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="681814370894208" title="ControlesP2">
+                    <sub-events>
+                        <event-block sid="884105487846194">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="310501938522660" type="Keyboard">
+                                    <param id="0" name="Key">87</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="197076443551580" type="Player2V">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="375819952507650" type="Player2H">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="961864340352710">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="791081309761968" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="168817536994752" type="Player2V">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="268037537339750" type="Player2H">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
-        </event-block>
+        </event-group>
     </events>
 </c2eventsheet>
