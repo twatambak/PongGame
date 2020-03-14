@@ -252,6 +252,10 @@
                     <param id="0" name="Comparison">5</param>
                     <param id="1" name="Y co-ordinate">496</param>
                 </condition>
+                <condition id="-2" name="Compare Y" sid="549107545364319" type="Bola">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">600</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
