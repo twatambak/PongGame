@@ -245,5 +245,57 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-block sid="897885330937776">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="608411188637440" type="Player2V">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">Bola.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="548773138407844" type="Player2V">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="339156482824585">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="142044282945385" type="Player2V">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">Bola.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="992532622675770" type="Player2V">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="186052313211031">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="647845576925397" type="Player2H">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">Bola.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="867912342966768" type="Player2H">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="520054809201581">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="594257136910777" type="Player2H">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">Bola.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="532932923231297" type="Player2H">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
