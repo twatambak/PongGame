@@ -253,6 +253,13 @@
         <object-type name="Texto4" sid="486334500698024">
             <plugin id="Text" />
         </object-type>
+        <object-type name="BackgroundTutorial" sid="816784640417491">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Texto5" sid="642699622021971">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

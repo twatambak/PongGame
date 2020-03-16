@@ -19006,7 +19006,7 @@
                                 <gravity>80</gravity>
                                 <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -19184,6 +19184,115 @@
                 </instance>
             </instances>
             <effects />
+        </layer>
+        <layer name="Tutorial" sid="310288331468166">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="BackgroundTutorial" uid="673">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>36</x>
+                        <y>36</y>
+                        <z>0</z>
+                        <width>632</width>
+                        <height>632</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Texto5" uid="674">
+                    <properties>
+                        <text>Text</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-96,400,0</font>
+                        <color>153,255,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>640</width>
+                        <height>640</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects>
+                <effect-type name="Bulge">
+                    <effect id="bulge" />
+                    <effect-instance type="Bulge">
+                        <parameters>
+                            <radius>0.7</radius>
+                            <scale>0.2</scale>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="ScanLines">
+                    <effect id="scanlines" />
+                    <effect-instance type="ScanLines">
+                        <parameters>
+                            <line-height>3</line-height>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="GlowHorizontal">
+                    <effect id="glowhorizontal" />
+                    <effect-instance type="GlowHorizontal">
+                        <parameters>
+                            <intensity>0.5</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                    <effect-instance type="GlowVertical">
+                        <parameters>
+                            <intensity>0.5</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="Noise">
+                    <effect id="noise" />
+                    <effect-instance type="Noise">
+                        <parameters>
+                            <color>0.3</color>
+                            <intensity>0.15</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
         </layer>
         <layer name="TextoVitoria" sid="340552252263407">
             <initially-visible>1</initially-visible>
