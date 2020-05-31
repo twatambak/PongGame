@@ -551,6 +551,12 @@
                                 <action id="0" name="Set text" sid="530188001644372" type="Texto4">
                                     <param id="0" name="Text">TextoVitoria</param>
                                 </action>
+                                <action id="-16" name="Wait" sid="944460135355250" type="System">
+                                    <param id="0" name="Seconds">4</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="312484241246653" type="System">
+                                    <param id="0" name="Layout">Menu</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="897393551422233">
@@ -575,6 +581,12 @@
                                 </action>
                                 <action id="0" name="Set text" sid="185718072015953" type="Texto4">
                                     <param id="0" name="Text">TextoVitoria</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="316251390375841" type="System">
+                                    <param id="0" name="Seconds">4</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="959342345436491" type="System">
+                                    <param id="0" name="Layout">Menu</param>
                                 </action>
                             </actions>
                         </event-block>

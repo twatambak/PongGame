@@ -835,7 +835,7 @@
             <instances>
                 <instance type="Texto2" uid="667">
                     <properties>
-                        <text>Developed by HitKill Studios</text>
+                        <text>Developed by Thiago L. Watambak</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-26.4,400,0</font>
                         <color>252,171,2</color>
@@ -852,9 +852,9 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>352</x>
-                        <y>592</y>
+                        <y>584</y>
                         <z>0</z>
-                        <width>392</width>
+                        <width>432</width>
                         <height>48</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -885,6 +885,36 @@
                         <y>544</y>
                         <z>0</z>
                         <width>280</width>
+                        <height>48</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Texto2" uid="675">
+                    <properties>
+                        <text>HitKill Studios</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-26.4,400,0</font>
+                        <color>10,255,236</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <ID>NA</ID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>360</x>
+                        <y>624</y>
+                        <z>0</z>
+                        <width>168</width>
                         <height>48</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
