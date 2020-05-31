@@ -242,12 +242,16 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="492984434643136" type="System">
-                            <param id="0" name="Layout">Pong</param>
-                        </action>
                         <action id="-9" name="Set value" sid="906251838135233" type="System">
                             <param id="0" name="Variable">Modo</param>
                             <param id="1" name="Value">&quot;Bot&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="492984434643136" type="System">
+                            <param id="0" name="Layout">Pong</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="811449116556825" type="System">
+                            <param id="0" name="Variable">TextoTutorial</param>
+                            <param id="1" name="Value">&quot;Use the arrow keys to move. Destroy the opponent&apos;s wall to make the ball go through.&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -260,12 +264,16 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="856086964122119" type="System">
-                            <param id="0" name="Layout">Pong</param>
-                        </action>
                         <action id="-9" name="Set value" sid="341989073718704" type="System">
                             <param id="0" name="Variable">Modo</param>
                             <param id="1" name="Value">&quot;Coop&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="856086964122119" type="System">
+                            <param id="0" name="Layout">Pong</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="341890150974192" type="System">
+                            <param id="0" name="Variable">TextoTutorial</param>
+                            <param id="1" name="Value">&quot;Pink use WASD to move, and Green use arrow keys. Destroy the opponent&apos;s wall to make the ball go through.&quot;</param>
                         </action>
                     </actions>
                 </event-block>

@@ -421,7 +421,37 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
-                        <y>504</y>
+                        <y>472</y>
+                        <z>0</z>
+                        <width>272</width>
+                        <height>112</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Texto2" uid="653">
+                    <properties>
+                        <text>2 Player</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-34.4,400,0</font>
+                        <color>152,252,2</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <ID>2P</ID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>520</x>
+                        <y>472</y>
                         <z>0</z>
                         <width>272</width>
                         <height>112</height>
@@ -439,7 +469,7 @@
                     <effect-instance type="Bulge">
                         <parameters>
                             <radius>0.7</radius>
-                            <scale>0</scale>
+                            <scale>0.2</scale>
                         </parameters>
                     </effect-instance>
                 </effect-type>
@@ -515,7 +545,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>264</x>
-                        <y>504</y>
+                        <y>472</y>
                         <z>0</z>
                         <width>16</width>
                         <height>80</height>
@@ -547,7 +577,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
-                        <y>472</y>
+                        <y>440</y>
                         <z>0</z>
                         <width>144</width>
                         <height>16</height>
@@ -579,7 +609,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>104</x>
-                        <y>504</y>
+                        <y>472</y>
                         <z>0</z>
                         <width>16</width>
                         <height>80</height>
@@ -611,40 +641,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>184</x>
-                        <y>536</y>
+                        <y>504</y>
                         <z>0</z>
                         <width>144</width>
                         <height>16</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Texto2" uid="653">
-                    <properties>
-                        <text>2 Player</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-34.4,400,0</font>
-                        <color>152,252,2</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <instance-variables>
-                        <ID>2P</ID>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>520</x>
-                        <y>504</y>
-                        <z>0</z>
-                        <width>272</width>
-                        <height>112</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -673,7 +673,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>600</x>
-                        <y>504</y>
+                        <y>472</y>
                         <z>0</z>
                         <width>16</width>
                         <height>80</height>
@@ -705,7 +705,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>520</x>
-                        <y>472</y>
+                        <y>440</y>
                         <z>0</z>
                         <width>144</width>
                         <height>16</height>
@@ -737,7 +737,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>440</x>
-                        <y>504</y>
+                        <y>472</y>
                         <z>0</z>
                         <width>16</width>
                         <height>80</height>
@@ -769,7 +769,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>520</x>
-                        <y>536</y>
+                        <y>504</y>
                         <z>0</z>
                         <width>144</width>
                         <height>16</height>
@@ -812,6 +812,15 @@
                     <effect-instance type="ScanLines">
                         <parameters>
                             <line-height>3</line-height>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="Bulge">
+                    <effect id="bulge" />
+                    <effect-instance type="Bulge">
+                        <parameters>
+                            <radius>0.7</radius>
+                            <scale>0.2</scale>
                         </parameters>
                     </effect-instance>
                 </effect-type>

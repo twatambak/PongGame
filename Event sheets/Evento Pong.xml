@@ -3,12 +3,50 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Evento Pong</name>
     <events>
-        <variable constant="0" name="TextoTutorial" sid="516596076141041" static="0" type="text"></variable>
+        <variable constant="0" name="TextoTutorial" sid="516596076141041" static="0" type="text">a</variable>
         <variable constant="0" name="TextoVitoria" sid="994466554909431" static="0" type="text"></variable>
-        <variable constant="0" name="Modo" sid="131011317398115" static="0" type="text">Bot</variable>
+        <variable constant="0" name="Modo" sid="131011317398115" static="0" type="text">Coop</variable>
         <variable constant="0" name="VelocidadeBola" sid="118298211820659" static="0" type="number">300</variable>
         <variable constant="0" name="CorBackground" sid="307655474121503" static="0" type="text">a</variable>
         <variable constant="0" name="Game" sid="798528974907147" static="0" type="number">0</variable>
+        <event-block sid="953858406992609">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="182090343700619" type="System">
+                    <param id="0" name="Variable">Modo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Bot&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="904830377503454" type="System">
+                    <param id="0" name="Group name">&quot;Comportamento do Bot&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="953335891654872" type="System">
+                    <param id="0" name="Group name">&quot;ControlesP2&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="691734160160508">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="215202289460012" type="System">
+                    <param id="0" name="Variable">Modo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Coop&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="807507796362441" type="System">
+                    <param id="0" name="Group name">&quot;Comportamento do Bot&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="587330022985058" type="System">
+                    <param id="0" name="Group name">&quot;ControlesP2&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="924722026109491">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="730886189225218" type="System" />
@@ -25,13 +63,10 @@
                 <action id="0" name="Set text" sid="510462086921427" type="Texto4">
                     <param id="0" name="Text">&quot;&quot;</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="297819141586396">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="445935982168417" type="System" />
-            </conditions>
-            <actions>
+                <action id="-4" name="Set layer visible" sid="845848505817636" type="System">
+                    <param id="0" name="Layer">&quot;Tutorial&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
                 <action id="0" name="Set text" sid="915096234413424" type="Texto5">
                     <param id="0" name="Text">TextoTutorial</param>
                 </action>
@@ -101,57 +136,9 @@
             <sub-events>
                 <event-block sid="244942780757741">
                     <conditions>
-                        <condition id="-2" name="On start of layout" sid="702626662275585" type="System" />
+                        <condition id="-1" name="Every tick" sid="702626662275585" type="System" />
                     </conditions>
                     <actions />
-                    <sub-events>
-                        <event-block sid="953858406992609">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="182090343700619" type="System">
-                                    <param id="0" name="Variable">Modo</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;Bot&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-12" name="Set group active" sid="904830377503454" type="System">
-                                    <param id="0" name="Group name">&quot;Bot&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="953335891654872" type="System">
-                                    <param id="0" name="Group name">&quot;ControlesP2&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="126571116695277" type="System">
-                                    <param id="0" name="Variable">TextoTutorial</param>
-                                    <param id="1" name="Value">&quot;Use the arrow keys to move. Destroy the opponent&apos;s wall to make the ball go through.&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="691734160160508">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="215202289460012" type="System">
-                                    <param id="0" name="Variable">Modo</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;Coop&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-12" name="Set group active" sid="807507796362441" type="System">
-                                    <param id="0" name="Group name">&quot;Bot&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="587330022985058" type="System">
-                                    <param id="0" name="Group name">&quot;ControlesP2&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="371423068291278" type="System">
-                                    <param id="0" name="Variable">TextoTutorial</param>
-                                    <param id="1" name="Value">&quot;Pink use WASD to move, and Green use arrow keys. Destroy the opponent&apos;s wall to make the ball go through.&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -327,7 +314,7 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="402812038449502" title="Bot">
+        <event-group description="" inactive="1" sid="402812038449502" title="Bot">
             <sub-events>
                 <event-group description="" sid="159783809688554" title="Comportamento do Bot">
                     <sub-events>
@@ -458,7 +445,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="681814370894208" title="ControlesP2">
+                <event-group description="" inactive="1" sid="681814370894208" title="ControlesP2">
                     <sub-events>
                         <event-block sid="884105487846194">
                             <conditions>
@@ -494,23 +481,23 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="345054549641378">
-            <conditions>
-                <condition id="2" name="Key is down" sid="860345188345631" type="Keyboard">
-                    <param id="0" name="Key">32</param>
-                </condition>
-                <condition id="-9" name="Layer is visible" sid="216173937945910" type="System">
-                    <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="558895386057225" type="System">
-                    <param id="0" name="Layout">Menu</param>
-                </action>
-            </actions>
-        </event-block>
         <event-group description="" sid="346656004168768" title="Condições de Vitória">
             <sub-events>
+                <event-block sid="345054549641378">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="860345188345631" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="216173937945910" type="System">
+                            <param id="0" name="Layer">&quot;TextoVitoria&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="558895386057225" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="133239876540034">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="488186629444119" type="Bola">
@@ -554,9 +541,6 @@
                                 <action id="-16" name="Wait" sid="944460135355250" type="System">
                                     <param id="0" name="Seconds">4</param>
                                 </action>
-                                <action id="-2" name="Go to layout" sid="312484241246653" type="System">
-                                    <param id="0" name="Layout">Menu</param>
-                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="897393551422233">
@@ -585,14 +569,23 @@
                                 <action id="-16" name="Wait" sid="316251390375841" type="System">
                                     <param id="0" name="Seconds">4</param>
                                 </action>
-                                <action id="-2" name="Go to layout" sid="959342345436491" type="System">
-                                    <param id="0" name="Layout">Menu</param>
-                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="112019715477748">
+            <conditions>
+                <condition id="2" name="Key is down" sid="896688678006604" type="Keyboard">
+                    <param id="0" name="Key">80</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="750915886188306" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

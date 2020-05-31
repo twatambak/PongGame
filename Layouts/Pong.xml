@@ -19225,7 +19225,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-96,400,0</font>
+                        <font>Arial,-37.6,400,0</font>
                         <color>153,255,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -19236,11 +19236,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32</x>
-                        <y>32</y>
+                        <x>144</x>
+                        <y>180</y>
                         <z>0</z>
-                        <width>640</width>
-                        <height>640</height>
+                        <width>416</width>
+                        <height>344</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
